@@ -81,6 +81,12 @@ public class Usuario {
 	public void setFK_agencia(Integer fK_agencia) {
 		FK_agencia = fK_agencia;
 	}
+
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", nome=" + nome + ", senha=" + senha + ", nomecompleto=" + nomecompleto
+				+ ", mail=" + mail + ", FK_agencia=" + FK_agencia + "]";
+	}
 	
 	
 }

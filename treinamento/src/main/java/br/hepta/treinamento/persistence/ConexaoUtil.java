@@ -2,14 +2,7 @@ package br.hepta.treinamento.persistence;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-import br.hepta.treinamento.persistence.ConexaoUtil;
 
 public class ConexaoUtil {
 
