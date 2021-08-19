@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="utf-8">
+<!--  <link rel="stylesheet" type="text/css" href="./css/main.css"> -->
+<title>Lotéricas</title>
 </head>
-<body>
-Hello World
+<body >
+	<header class="menu-principal">
+		<div class="logo">
+			<h1>Lótericas</h1>
+		</div>
+
+		<h4>Usuarios Cadastrados</h4>
+		<button type="submit" onclick="listar()">Exibir</button>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Sobrenome</th>
+				<th>Senha</th>
+				<th>Email</th>
+				<th>Agencia</th>
+				<th>Data de Nascimento</th>
+				<th>Imagem</th>
+
+				<th>Editar</th>
+				<th>Apagar</th>
+			</tr>
+			<tbody id="user-table">
+
+			</tbody>
+		</table>
+		<br>
+
+		<h4>Agencias Cadastradas</h4>
+		<button type="submit" onclick="listarAgencia()">Exibir</button>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Endereço</th>
+				<th>Telefone</th>
+
+				<th>Editar</th>
+				<th>Apagar</th>
+			</tr>
+			<tbody id="agencia-table">
+
+			</tbody>
+		</table>
+		<!-- <div> <a href="./paginas/listas.html" class="botao1">Relação de dados</a></div> -->
+		<br>
+		<div>
+			<a href="./paginas/novo-usuario.html">Adicionar novo usuario</a>
+		</div>
+		<br>
+		<div>
+			<a href="./paginas/nova-agencia.html">Adicionar nova agencia</a>
+		</div>
+		<br>
+		<!-- <div><a	href="./paginas/editar.html">Editar</a></div> -->
+	</header>
+	<script src="./resources/js/script.js"></script>
 </body>
 </html>

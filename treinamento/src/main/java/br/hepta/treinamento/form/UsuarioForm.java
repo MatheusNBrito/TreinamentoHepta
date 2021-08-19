@@ -1,20 +1,45 @@
 package br.hepta.treinamento.form;
 
-import javax.persistence.Column;
+import java.util.Date;
 
 import br.hepta.treinamento.entity.Usuario;
 
 public class UsuarioForm {
-	
+
+	private Integer id;
 	private String nome;
-	
 	private String senha;
+	private String sobrenome;
+	private String email;
+	private Integer fk_agencia;
+	private Date user_data;
+	private byte[] imagem;
 	
-	private String nomecompleto;
+	public byte[] getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(byte[] imagem) {
+		this.imagem = imagem;
+	}
+
 	
-	private String mail;
-	
-	private Integer FK_agencia;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Date getUser_data() {
+		return user_data;
+	}
+
+	public void setUser_data(Date user_data) {
+		this.user_data = user_data;
+	}
 
 	public String getNome() {
 		return nome;
@@ -33,39 +58,39 @@ public class UsuarioForm {
 	}
 
 	public String getNomecompleto() {
-		return nomecompleto;
+		return sobrenome;
 	}
 
 	public void setNomecompleto(String nomecompleto) {
-		this.nomecompleto = nomecompleto;
+		this.sobrenome = nomecompleto;
 	}
 
 	public String getMail() {
-		return mail;
+		return email;
 	}
 
 	public void setMail(String mail) {
-		this.mail = mail;
+		this.email = mail;
 	}
 
 	public Integer getFK_agencia() {
-		return FK_agencia;
+		return fk_agencia;
 	}
 
 	public void setFK_agencia(Integer fK_agencia) {
-		FK_agencia = fK_agencia;
+		fk_agencia = fK_agencia;
 	}
 
 	public Usuario toEntity() {
 		Usuario user = new Usuario();
-		
-		
+
 		user.setNome(nome);
 		user.setPassword(senha);
-		user.setEmail(mail);
-		user.setFullname(nomecompleto);
-		user.setFK_agencia(FK_agencia);
-		
+		user.setEmail(email);
+		user.setFullname(sobrenome);
+		user.setFK_agencia(fk_agencia);
+		user.setUser_data(user_data);
+
 		return user;
 	}
 }

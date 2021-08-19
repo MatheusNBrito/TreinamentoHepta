@@ -25,7 +25,7 @@ class AgenciaDAOTest {
 	@Test
 	void testAgencialistar() throws Exception {
 		AgenciaDAO users = new AgenciaDAO();
-		users.listar();
+		users.listarAgencia();
 	}
 	
 	@Test

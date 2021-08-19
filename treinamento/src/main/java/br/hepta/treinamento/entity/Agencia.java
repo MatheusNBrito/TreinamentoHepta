@@ -21,7 +21,7 @@ public class Agencia {
 
 	@Column(name = "nome")
 	private String nome;
-	
+
 	@Column(name = "adress")
 	private String adress;
 
@@ -35,7 +35,7 @@ public class Agencia {
 	public void setId(Integer idag) {
 		this.idag = idag;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -58,6 +58,11 @@ public class Agencia {
 
 	public void setTelefone(Integer telefone) {
 		this.telefone = telefone;
+	}
+	
+	@Override
+	public String toString() {
+		return "Usuario [id=" + idag + ", nome=" + nome + ", adress=" + adress + ", telefone=" + telefone + "]";
 	}
 
 }

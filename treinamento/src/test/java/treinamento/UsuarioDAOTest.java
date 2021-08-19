@@ -19,6 +19,7 @@ class UsuarioDAOTest {
 		usuarioTest.setFullname("Lucas Almeida");
 		usuarioTest.setEmail("lucas@gmail.com");
 		usuarioTest.setFK_agencia(3);
+		//usuarioTest.setUser_data();
 
 		UsuarioDAO users = new UsuarioDAO();
 		users.inserir(usuarioTest);
@@ -56,23 +57,23 @@ class UsuarioDAOTest {
 	}
 	
 	//Editar Agencia
-	@Test
-	void testUsuarioseditarAgencia() throws Exception {
-
-		Usuario usuarioTest = new Usuario();;
-		usuarioTest.setFK_agencia(1);
-		usuarioTest.setId(22);
-		
-		UsuarioDAO users = new UsuarioDAO();
-		users.editarFKAgencia(usuarioTest);
-	}
-	
+//	@Test
+//	void testUsuarioseditarAgencia() throws Exception {
+//
+//		Usuario usuarioTest = new Usuario();;
+//		usuarioTest.setFK_agencia(1);
+//		usuarioTest.setId(22);
+//		
+//		UsuarioDAO users = new UsuarioDAO();
+//		users.editarFKAgencia(usuarioTest);
+//	}
+//	
 	//Deletar Usuario
 	@Test
 	void testUsuariosdeletar() throws Exception {
 
 		UsuarioDAO users = new UsuarioDAO();
-		users.deletar(22);
+		users.deletar(23);
 	}
 
 }
